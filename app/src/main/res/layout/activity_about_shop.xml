@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSplashScreenBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/value_margin_top_bottom"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_about_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height"
+            android:background="@color/colorWhite"
+            android:hint="@string/user_name"
+            app:layout_constraintStart_toStartOf="@id/cl_about_shop"
+            app:layout_constraintEnd_toEndOf="@id/cl_about_shop"
+            app:layout_constraintTop_toTopOf="@id/cl_about_shop"
+            android:layout_marginStart="@dimen/et_margin_start_end"
+            android:layout_marginEnd="@dimen/et_margin_start_end"
+            android:paddingStart="@dimen/et_padding_start_end"
+            android:paddingEnd="@dimen/et_padding_start_end"/>
+        <EditText
+            android:id="@+id/et_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height"
+            android:background="@color/colorWhite"
+            android:hint="@string/shop_name"
+            app:layout_constraintStart_toStartOf="@id/cl_about_shop"
+            app:layout_constraintEnd_toEndOf="@id/cl_about_shop"
+            app:layout_constraintTop_toBottomOf="@id/et_user_name"
+            android:layout_marginStart="@dimen/et_margin_start_end"
+            android:layout_marginEnd="@dimen/et_margin_start_end"
+            android:layout_marginTop="@dimen/et_margin_top_bottom"
+            android:paddingStart="@dimen/et_padding_start_end"
+            android:paddingEnd="@dimen/et_padding_start_end"/>
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height"
+            android:background="@color/colorWhite"
+            android:hint="@string/phone"
+            app:layout_constraintStart_toStartOf="@id/cl_about_shop"
+            app:layout_constraintEnd_toEndOf="@id/cl_about_shop"
+            app:layout_constraintTop_toBottomOf="@id/et_shop_name"
+            android:layout_marginStart="@dimen/et_margin_start_end"
+            android:layout_marginEnd="@dimen/et_margin_start_end"
+            android:layout_marginTop="@dimen/et_margin_top_bottom"
+            android:paddingStart="@dimen/et_padding_start_end"
+            android:paddingEnd="@dimen/et_padding_start_end"/>
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height"
+            android:background="@color/colorWhite"
+            android:hint="@string/address"
+            app:layout_constraintStart_toStartOf="@id/cl_about_shop"
+            app:layout_constraintEnd_toEndOf="@id/cl_about_shop"
+            app:layout_constraintTop_toBottomOf="@id/et_phone"
+            android:layout_marginStart="@dimen/et_margin_start_end"
+            android:layout_marginEnd="@dimen/et_margin_start_end"
+            android:layout_marginTop="@dimen/et_margin_top_bottom"
+            android:paddingStart="@dimen/et_padding_start_end"
+            android:paddingEnd="@dimen/et_padding_start_end"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tocontinue"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/btn_background"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

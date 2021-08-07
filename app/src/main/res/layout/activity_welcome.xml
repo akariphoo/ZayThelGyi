@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/value_margin_top_bottom">
+
+        <TextView
+            android:id="@+id/tv_mingalarpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mingalarpar"
+            android:textSize="@dimen/label_text_size"
+            app:layout_constraintStart_toStartOf="@id/cl_header"
+            app:layout_constraintEnd_toEndOf="@id/cl_header"
+            app:layout_constraintTop_toTopOf="@id/cl_header"
+            android:layout_marginTop="@dimen/label_margin_top_bottom"
+            />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/cl_header"
+            app:layout_constraintEnd_toEndOf="@id/cl_header"
+            app:layout_constraintTop_toBottomOf="@id/tv_mingalarpar"
+            android:layout_marginTop="@dimen/sc_margin_top_bottom" />
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            app:layout_constraintStart_toStartOf="@id/cl_header"
+            app:layout_constraintEnd_toEndOf="@id/cl_header"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:layout_marginTop="@dimen/sc_margin_top_bottom" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_start_use"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:text="@string/start_use"
+            android:textColor="@color/colorWhite"
+            android:background="@color/btn_background"
+            app:layout_constraintStart_toStartOf="@id/cl_footer"
+            app:layout_constraintEnd_toEndOf="@id/cl_footer"
+            app:layout_constraintTop_toTopOf="@id/cl_footer"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
